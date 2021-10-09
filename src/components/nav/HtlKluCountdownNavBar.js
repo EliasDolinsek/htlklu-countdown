@@ -6,7 +6,6 @@ function HtlKluCountdownNavBar() {
             <Navbar.Brand>HTL-KLU Countdown</Navbar.Brand>
             <Nav>
                 <Nav.Link>Sign In</Nav.Link>
-                <Nav.Link href="#deets">By Elias Dolinsek</Nav.Link>
             </Nav>
         </Container>
     </Navbar>

@@ -1,16 +1,23 @@
 import EventItem from "./EventItem";
-import {Col, Row} from "react-bootstrap";
+import {Alert, Col, Row} from "react-bootstrap";
 
 function EventsList(props) {
-    return <div>
-        <h4>{props.title}</h4>
-        <Row>
+    let content;
+    if (props.events.length === 0) {
+        content = <Alert variant="warning" className="mt-2">There are currently no events live :/</Alert>
+    } else {
+        content = <Row>
             {props.events.map(event => {
-                return <div style={{ width: '18rem' }}>
+                return <Col className="mt-2" xl="3" md="4" sm={6}>
                     <EventItem event={event}/>
-                </div>
+                </Col>
             })}
         </Row>
+    }
+
+    return <div className="mt-5">
+        <h4>{props.title}</h4>
+        {content}
     </div>
 }
 
