@@ -1,7 +1,6 @@
-import {Alert, Col, Container, Row} from "react-bootstrap";
+import {Container} from "react-bootstrap";
 import EventsList from "../EventsList";
 import HtlKluCountdownNavBar from "../nav/HtlKluCountdownNavBar";
-import EventItem from "../EventItem";
 
 const DUMMY_DATA = [
     {
@@ -32,7 +31,7 @@ const DUMMY_DATA = [
         imageUrl: "https://www.howtogeek.com/wp-content/uploads/2018/06/shutterstock_1006988770.png.pagespeed.ce.j7cKjHOFa7.png"
     },
     {
-        id: 3,
+        id: 4,
         title: "Test 2",
         description: "Test",
         startDate: Date.now(),
@@ -41,7 +40,7 @@ const DUMMY_DATA = [
         imageUrl: "https://www.howtogeek.com/wp-content/uploads/2018/06/shutterstock_1006988770.png.pagespeed.ce.j7cKjHOFa7.png"
     },
     {
-        id: 3,
+        id: 5,
         title: "Test 2",
         description: "Test",
         startDate: Date.now(),

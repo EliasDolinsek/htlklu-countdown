@@ -8,7 +8,7 @@ function EventsList(props) {
     } else {
         content = <Row>
             {props.events.map(event => {
-                return <Col className="mt-2" xl="3" md="4" sm={6}>
+                return <Col className="mt-3" xl="3" md="4" sm={6} key={event.id}>
                     <EventItem event={event}/>
                 </Col>
             })}
